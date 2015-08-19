@@ -1,0 +1,42 @@
+<html>
+    <body>
+        <script>
+            function myFuction() {
+                document.querySelector(".example").style.backgroundColor = "red"
+            }
+            function myFuction2() {
+                document.querySelector("h2").style.backgroundColor = "green"
+            }
+        </script>
+        
+        
+        <p class="example">A</p>
+        <h2 class="example">B</h2>
+        
+        <button onclick="myFuction()">try it</button>
+        <button onclick="myFuction2()">try it</button>
+    </body>
+</html>
+
+
+<!DOCTYPE html>
+<html>
+    <body>
+        
+        <p>it's my p</p>
+        <p class="example">A paragraph with class="example".</p>
+        <h2 class="example">A heading with class="example"</h2>
+        
+        
+        <p>Click the button to add a background color to the first element in the document with class="example".</p>
+        
+        <button onclick="myFunction()">Try it</button>
+        
+        <script>
+            function myFunction() {
+                document.querySelector("button").style.backgroundColor = "red";
+            }
+        </script>
+        
+    </body>
+</html>
