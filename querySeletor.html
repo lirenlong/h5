@@ -1,19 +1,41 @@
 <html>
     <body>
-        <script>
-            function myFuction() {
-                document.querySelector(".example").style.backgroundColor = "red"
-            }
-            function myFuction2() {
-                document.querySelector("h2").style.backgroundColor = "green"
-            }
-        </script>
-        
-        
+<!--        test 1-->
+        <h2>TEST 1</h2>
         <p class="example">A</p>
         <h2 class="example">B</h2>
         
         <button onclick="myFuction()">try it</button>
         <button onclick="myFuction2()">try it</button>
+        
+        
+<!--        test 2-->
+        <h2>TEST 2</h2>
+        <h3 id="roger">I am roger.</h3>
+        
+        
+        
+<!--        test 3-->
+        <h2>TEST 3</h2>
+        <div>
+            <p>I am in div</p>
+        </div>
+
+
+        <script>
+            function myFuction() {
+                // query dom with class
+                document.querySelector(".example").style.backgroundColor = "red"
+            }
+            function myFuction2() {
+                // query dom with tab name
+                document.querySelector("h2").style.backgroundColor = "green"
+            }
+        // query dom with id
+        document.querySelector("#roger").style.border = "2px solid red";
+        // query dom with tab hierachy
+        document.querySelector("div > p").innerHTML = "hello roger!";
+        </script>
+        
     </body>
 </html>
